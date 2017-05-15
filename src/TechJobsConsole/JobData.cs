@@ -26,7 +26,11 @@ namespace TechJobsConsole
 
                     if (aValue.Contains(term.ToUpper()))
                     {
-                        jobs.Add(job);
+                        if (!jobs.Contains(job))
+                        {
+                            jobs.Add(job);
+                        }
+                        
                     }
                 }
                 
